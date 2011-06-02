@@ -1,6 +1,10 @@
 <?php
 
 /*
+ * 
+ * 
+ * 
+ * 
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
@@ -214,7 +218,7 @@ class RewriteEngine
 	    die("no");
 	    Response::getInstance()->redirect(ResponseRegistery::getInstance()->baseURL . '/error.php');
 	    return;
-	    die("صفحه مورد نظر پیدا نشد");
+	    die("ص�?حه مورد نظر پیدا نشد");
 	}
     }
 
