@@ -1,0 +1,263 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META NAME="description" CONTENT="<-BlogAndPostTitle-> - <-BlogDescription->">
+<META NAME="keywords" CONTENT="<-BlogAndPostTitle->,<-BlogId->, Blog, Weblog, Persian,Iran, Iranian, Farsi, Weblogs, Blogs">
+<link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" />
+<meta name="GENERATOR" content="AirHost-BlogSystem">
+<title><-BlogAndPostTitle-></title>
+<base HREF="<-BaseURL->/blog/" />
+<style>
+BODY {font-family: Tahoma; font-size: 8pt;color: #000000; background-color: #f8fafb;	text-align: center;}
+.Center{width:740px;text-align: center;}
+
+.HeaderBox{direction: rtl;width:100%;height:100px;background-image: url('http://www.blogfa.com/Layouts/silver/bgr.jpg'); background-repeat: repeat-x; background-position-y: top}
+.BlogTitle{color:black;font-family: Arial; font-size: 18pt; font-weight: bold;padding-top: 22px;padding-bottom: 20px}
+.BlogTitle A:link {color:black;text-decoration: none;}
+.BlogTitle A:visited {color:black;text-decoration: none;}
+.BlogTitle A:hover {color:black;text-decoration: none;}
+
+.BlogSubTitle{color:black ;font-family: Tahoma;font-size: 9pt;padding-bottom: 6px}
+.Container{padding:0px; border:1px solid #d9dee1; color: #000000; background-color: #FFFFFF;text-align=right;direction: rtl;}
+
+.Content{padding-left:3px;padding-right:3px;width: 569px;float: right;text-align: right;direction: rtl;}
+.Sidebar{font-family: Tahoma;line-height: 150%;width: 159px;float: left;padding:0px;padding-left:3px;padding-right:1px;;text-align: right;direction: rtl;}
+
+.PostTitle{font-size: 9pt;font-family: Tahoma;color:black;padding-top: 6px; padding-bottom: 2px;padding-top: 3px;padding-right: 3px;}
+.PostTitle A:link {color:black;text-decoration: none;}
+.PostTitle A:visited {color:black;text-decoration: none;}
+.PostTitle A:hover {color:blue;text-decoration: none;}
+
+
+.PostBody {padding-right: 5px ;font-size: 9pt;font-family: Tahoma;color:black;padding-top: 1px; padding-bottom: 2px;line-height:1.5em;}
+.PostBody A:link{color:#258CF3;text-decoration: none;}
+.PostBody A:visited {color:#258CF3;text-decoration: none;}
+.PostBody A:hover{color:red;text-decoration: none;}
+.postdesc {font-size: 7pt;font-family: Tahoma;color:gray;padding-bottom: 10px}
+.postdesc A{font-size: 8pt;font-family: Tahoma;}
+
+
+A:link {color:blue;text-decoration: none;}
+A:visited {color:blue;text-decoration: none;}
+A:hover {color:red;text-decoration: none;}
+
+
+</style> 
+
+<script  language="javascript">
+  function GetBC(lngPostid)
+   {
+       intTimeZone=<-BlogTimeZone->;
+       strBlogId="<-BlogId->";
+       intCount=-1;
+       strResult="";
+       try {
+	  for (i=0;i<BlogComments.length;i+=2)
+	  {
+	       if (BlogComments[i]==lngPostid)
+	       intCount=BlogComments[i+1] ;
+	  }
+           }  catch( e) {
+           }
+    if ( intCount==-1)  strResult="آرشیو نظرات";
+    if ( intCount==0)  strResult="نظر بدهید";
+    if ( intCount==1)  strResult="یک نظر";
+    if ( intCount>1)  strResult=intCount + " نظر" ;
+  
+  strUrl="<-BlogUrl->/comment/" + lngPostid ;
+  strResult ="<a href=\"javascript:void(0)\" onclick=\"javascript:window.open('" + strUrl + "','comments','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px')\" >" +  strResult + " </a>" ;
+
+  document.write ( strResult ) ;
+ }
+ function OpenLD()
+{
+  window.open('LinkDump.aspx','blog_ld','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px');
+  return true;
+}
+
+</script>
+
+
+</head>
+
+<body>
+<div align =center>
+<div class ="Center">
+<div class="Container">
+<div class="HeaderBox" align=center >
+<div class="BlogTitle" dir="rtl"><a href="<-BlogUrl->"><-BlogTitle-></a></div>
+<div class="BlogSubTitle" dir="rtl"><-BlogDescription-></div>
+</div>
+<div style="padding:5px"></div> 
+
+<div style="height:100%">
+	<div class="Content">
+	<BLOG>
+	  <a name="<-PostId->"></a>
+   <div style="width:100%;border: 1px solid #d9dee1;">
+        <div style="border-bottom:1px solid #d9dee1;width:100%;height:24px;background-image: url('http://www.blogfa.com/layouts/silver/Nvbg.gif'); background-repeat: repeat-x; background-position-y: top">
+        <div class="posttitle"><a href="<-PostLink->"><-PostTitle-></a></div>
+        </div>
+		<div class="postbody" ><-PostContent-><BlogExtendedPost><br><a href="<-PostLink->">ادامه مطلب</a></BlogExtendedPost></div>
+			<div class="postdesc">
+		<a  href="<-PostLink->" >+</a>
+		نوشته شده در &nbsp;<-PostDate->ساعت&nbsp;<-PostTime->&nbsp; توسط&nbsp;<-PostAuthor->&nbsp; 
+		<BlogComment>
+		  |&nbsp;
+		  <span dir="rtl" >
+	      <script type="text/javascript">GetBC(<-PostId->);</script>
+	      </span>
+        </BlogComment>
+     </div>
+
+   </div>
+    <div style="padding-top:5px"></div>  
+	</BLOG>
+
+<BlogNextAndPreviousBlock>
+<div style="width:100%;padding-top:10px">
+<BlogPreviousPageBlock>
+<div style="width:49%;float:right"><a href="<-BlogPreviousPageLink->">مطالب جدیدتر</a></div>
+</BlogPreviousPageBlock>
+<BlogNextPageBlock>
+<div style="width:49%;float:left;text-align:left"><a href="<-BlogNextPageLink->">مطالب قدیمی‌تر</a></div>
+</BlogNextPageBlock>
+</div>
+</BlogNextAndPreviousBlock>
+
+	</div>
+	
+	<div class="Sidebar">
+	
+  <BlogProfile>
+    <div style="width:100%;border: 1px solid #d9dee1;">
+        <div style="border-bottom:1px solid #d9dee1;width:100%;height:24px;background-image: url('http://www.blogfa.com/Layouts/silver/Nvbg.gif'); background-repeat: repeat-x; background-position-y: top">
+        <div class="posttitle" align=center  >درباره</div>
+        </div>
+			<div style="padding-top:3px;padding-right:2px;padding-left:2px;; padding-bottom:7px;text-align: justify"  >
+		    <BlogPhoto>
+		    	<div style="padding-bottom:7px;text-align:center" >
+		        <img src="<-BlogPhotoLink->" >
+		        </div>
+		    </BlogPhoto>
+		   <-BlogAbout->
+     </div>
+     </div>
+     <div style="padding-top:5px"></div> 
+</BlogProfile>
+
+    <div style="width:100%;border: 1px solid #d9dee1;">
+        <div style="border-bottom:1px solid #d9dee1;width:100%;height:24px;background-image: url('http://www.blogfa.com/Layouts/silver/Nvbg.gif'); background-repeat: repeat-x; background-position-y: top">
+        <div class="posttitle"></div>
+        </div>
+			<div style="padding-top:3px;padding-right:3px"  >
+		<a href="<-BlogUrl->">صفحه نخست</a><br>
+		<BlogProfileLinkBlock><a href="<-BlogProfileLink->">پروفایل مدیر وبلاگ</a><br></BlogProfileLinkBlock>
+		<a href="mailto:<-BlogEmail->">پست الکترونیک</a><br>
+		<a href="<-BlogArchiveLink->">آرشیو وبلاگ</a><br>
+		<a href="/posts/">عناوین مطالب وبلاگ</a><br>
+     </div>
+     </div>	
+     <div style="padding-top:5px"></div> 
+
+     <BlogLinkDumpBlock>
+    <div style="width:100%;border: 1px solid #d9dee1;">
+        <div style="border-bottom:1px solid #d9dee1;width:100%;height:24px;background-image: url('http://www.blogfa.com/Layouts/silver/Nvbg.gif'); background-repeat: repeat-x; background-position-y: top">
+        <div class="posttitle" align=center >پیوندهای روزانه</div>
+        </div>
+		<div style="padding-top:3px;;padding-right:3px;direction:rtl"  >
+	 <BlogLinkDump>
+			<a href="<-LinkUrl->" target="_blank" title="<-LinkDescription->" ><-LinkTitle-></a><br>
+	 </BlogLinkDump>
+	 <a href="javascript:void(0)" onclick ="OpenLD();">آرشیو پیوندهای روزانه</a><br>
+
+      </div>
+     </div>	
+     <div style="padding-top:5px"></div> 
+     </BlogLinkDumpBlock>
+     
+     
+
+    <div style="width:100%;border: 1px solid #d9dee1;">
+        <div style="border-bottom:1px solid #d9dee1;width:100%;height:24px;background-image: url('http://www.blogfa.com/Layouts/silver/Nvbg.gif'); background-repeat: repeat-x; background-position-y: top">
+        <div class="posttitle" align=center >نوشته های پیشین</div>
+        </div>
+		<div style="padding-top:3px;;padding-right:3px"  >
+
+		<span dir="ltr">
+		<BlogArchive>
+			<a href="<-ArchiveLink->"><-ArchiveTitle-></a><br>
+		</BlogArchive>
+	
+     </div>
+     </div>	
+     <div style="padding-top:5px"></div> 
+     
+     
+ <BlogCategoriesBlock>
+    <div style="width:100%;border: 1px solid #d9dee1;">
+        <div style="border-bottom:1px solid #d9dee1;width:100%;height:24px;background-image: url('http://www.blogfa.com/Layouts/silver/Nvbg.gif'); background-repeat: repeat-x; background-position-y: top">
+        <div class="posttitle" align=center >آرشیو موضوعی</div>
+        </div>
+		<div style="padding-top:3px;;padding-right:3px;direction:rtl"  >
+	 <BlogCategories>
+			<a href="<-CategoryLink->"   ><-CategoryName-></a><br>
+	</BlogCategories>
+      </div>
+     </div>	
+     <div style="padding-top:5px"></div> 
+</BlogCategoriesBlock>
+     
+
+
+ <BlogAuthorsBlock>
+    <div style="width:100%;border: 1px solid #d9dee1;">
+        <div style="border-bottom:1px solid #d9dee1;width:100%;height:24px;background-image: url('http://www.blogfa.com/Layouts/silver/Nvbg.gif'); background-repeat: repeat-x; background-position-y: top">
+        <div class="posttitle" align=center >نویسندگان</div>
+        </div>
+		<div style="padding-top:3px;;padding-right:3px;direction:rtl"  >
+	  <BlogAuthors>
+			<a href="<-AuthorLink->"   ><-AuthorName-></a><br>
+	  </BlogAuthors>
+      </div>
+     </div>	
+     <div style="padding-top:5px"></div> 
+</BlogAuthorsBlock>
+          
+     
+    <BlogLinksBlock> 
+    <div style="width:100%;border: 1px solid #d9dee1;">
+        <div style="border-bottom:1px solid #d9dee1;width:100%;height:24px;background-image: url('http://www.blogfa.com/Layouts/silver/Nvbg.gif'); background-repeat: repeat-x; background-position-y: top">
+        <div class="posttitle" align=center >پیوندها</div>
+        </div>
+		<div style="padding-top:3px;;padding-right:3px;direction:rtl"  >
+		<BlogLinks>
+			<a href="<-LinkUrl->" target="_blank" ><-LinkTitle-></a><br>
+		</BlogLinks>
+      </div>
+     </div>	
+     <div style="padding-top:5px"></div> 
+     </BlogLinksBlock>
+     
+
+    	<p style="text-align:center">&nbsp;<a style="color: #FFFFFF; text-decoration: none; font-family: Arial; font-size: 8pt; border: 1px solid #FF9955;  background-color: #FF6600" href="<-BlogXmlLink->">&nbsp;RSS&nbsp;</a>
+		</p>
+        <div align=center >
+		
+	    <font color="#808080" style="font-size: 7pt">POWERED BY</font><br>
+	    <a style="color: #FF6B09; text-decoration: none;font-family:Verdana;font-weight:bold" href="http://www.blogfa.com/"    >
+	    BLOGFA.COM</a>
+	    </div>
+<div align="center"><br><-BlogCustomHtml-></div>
+
+		    
+	</div>
+   </div>	
+    <div style="clear: both;">&#160;</div>
+</div>
+
+</div>
+</div>
+</body>
+
+</html>

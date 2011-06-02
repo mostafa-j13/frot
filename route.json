@@ -1,0 +1,10 @@
+{
+   "actions":[
+       {
+           "ptr":".*",
+           "get":{"application":"$1","site":"asdsad1"},
+           "ctrl":{"last":true}
+       }
+       
+   ]
+}
